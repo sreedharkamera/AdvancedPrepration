@@ -10,10 +10,12 @@ import com.example.demo.entity.repository.DepartmentRepository;
 @Service
 public class DepartmentServiceImpl implements DepartmentService{
 
+	
 	DepartmentRepository departmentRepository;
 	
 	public DepartmentServiceImpl(DepartmentRepository departmentRepository)
 	{
+		System.out.println("dd");
 		this.departmentRepository = departmentRepository;
 	}
 	
@@ -34,5 +36,6 @@ public class DepartmentServiceImpl implements DepartmentService{
 	{
 		return departmentRepository.findAll();
 	}
+
 	
 }
